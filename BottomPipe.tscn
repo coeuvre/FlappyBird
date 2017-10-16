@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://sprites/ground.png" type="Texture" id=1]
+[ext_resource path="res://sprites/pipe_green_bottom.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 84, 28 )
+extents = Vector2( 12, 80 )
 
-[node name="Ground" type="Area2D" groups=[
-"Ground",
+[node name="BottomPipe" type="Area2D" groups=[
+"Pipe",
 ]]
 
 input_pickable = true
@@ -23,13 +23,13 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="Sprite" type="Sprite" parent="."]
 
+position = Vector2( 0, 80 )
 texture = ExtResource( 1 )
-centered = false
-_sections_unfolded = [ "Offset" ]
+_sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="Collision" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-position = Vector2( 84, 28 )
+position = Vector2( 0, 80 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
