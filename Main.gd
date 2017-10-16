@@ -5,6 +5,7 @@ const SCROLL_SPEED = 60
 func _ready():
 	set_process_input(true)
 	$BackgroundScroller.speed = SCROLL_SPEED
+	$PipeScroller.speed = SCROLL_SPEED
 	$GroundScroller.speed = SCROLL_SPEED
 
 func _input(event):
@@ -13,4 +14,5 @@ func _input(event):
 
 func _on_Bird_died():
 	$BackgroundScroller.speed = 0
+	$PipeScroller.speed = 0
 	$GroundScroller.speed = 0

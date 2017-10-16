@@ -12,4 +12,7 @@ func _physics_process(delta):
 		if child.position != null:
 			child.position.x -= speed * delta
 			if child.position.x + gap < 0:
-				child.position.x += step
+				_scroll(child)
+
+func _scroll(node):
+	node.position.x += step
