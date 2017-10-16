@@ -31,7 +31,6 @@ audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Transform" ]
-x_speed = 50
 gravity = 400
 jump = 160
 
@@ -39,6 +38,7 @@ jump = 160
 
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
